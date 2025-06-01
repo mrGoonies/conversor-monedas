@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi sitio web</title>
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <h1>conversor de monedas Nacional</h1>
+  <div class="app">
+    <h2>Peso CLP</h2>
+    <input type="text" id="amount" placeholder="Ingrese monto en CLP">
+    <h3>Moneda a convertir</h3>
+    <select id="currency">
+      <!-- Asignar las opciones de moneda en base a la API -->
+      <option value="null">---</option>
+      <option value="uf">Unidad de Fomento (UF)</option>
+      <option value="ivp">Indice de valor promedio (IVP)</option>
+      <option value="dolar">Dólar Observado</option>
+      <option value="dolar_intercambio">Dólar acuerdo</option>
+      <option value="euro">Euro</option>
+      <option value="ipc">Indice de Precios al Consumidor</option>
+      <option value="imacec">Indice Mensual de Actividad Económica (IMACEC)</option>
+      <option value="libra_cobre">Libra de Cobre</option>
+      <option value="tasa_cobre">Tasa de desempleo</option>
+      <option value="bicoin">Bitcoin</option>
+    </select>
+    <button id="convert">Convertir</button>
+    <h3 id="result"></h3>
+  </div>
+  <script src="./src/script.js"></script>
+</body>
+
+</html>
