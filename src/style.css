@@ -1,0 +1,148 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom style */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    background-color: #457b9d;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    border: 2px solid #e63946;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f1faee;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 90%;
+    max-width: 600px;
+    margin: 8rem auto;
+    text-align: center;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    font-weight: 400;
+    background-image: linear-gradient(to bottom right, #ffffff, #f0f0f0);
+
+    h1 {
+        font-size: 3rem;
+        color: #333;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 2rem;
+        color: #555;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+
+    input {
+        width: 50%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+            border-color: #457b9d;
+            outline: none;
+        }
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        color: #777;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    select {
+        width: 70%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        
+    }
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #1d3557;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #457b9d;
+        }
+    }
+}

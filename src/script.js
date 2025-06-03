@@ -22,7 +22,8 @@ document.getElementById("convert").addEventListener("click", async () => {
     const amount = parseFloat(document.getElementById("amount").value);
     
     if (isNaN(amount) || amount <= 0) {
-        document.getElementById("result").innerText = "Por favor, ingrese un monto válido.";
+        document.getElementById("result").innerText = "Por favor, ingrese un monto válido."
+        document.getElementById("result").style.color = "red";
         return;
     }
 
@@ -36,9 +37,3 @@ document.getElementById("convert").addEventListener("click", async () => {
         document.getElementById("result").innerText = "Moneda no encontrada.";
     }
 });
-
-
-
-
-
-// Mostrar resultado en el elemento con id "result"
